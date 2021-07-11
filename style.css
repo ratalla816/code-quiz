@@ -1,0 +1,35 @@
+:root{
+    background-color: #d0d2d6;
+    }
+
+p{
+    color: #030303;
+    text-shadow: .5px .5px #ebf2f2;
+    text-align: center;
+    font-size: xx-large;
+    font-family: sans-serif;
+    }
+
+h1{
+    text-align: center;
+    flex-basis: auto;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 0px;
+    color: #262f36;
+     }
+     
+h2{
+    font-family: sans-serif;
+    margin-top: -.5rem;
+     }   
+ 
+h3{
+    text-align: center;
+    flex-basis: auto;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 0px;
+    color: #262f36;
+     }    
+
