@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz!</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <!---     _____
          |A .  |
@@ -14,36 +14,39 @@
          |  T  |
          ---"--- --->
 <body>
-
 <header>
-    <nav>
-        <button class="btn" id="high-scores" type="submit">View High Scores</button> 
-    </nav>
-   <form id="View high scores">
-       <div class="high-scores">
-           <datalist type="score" name="player-name" rank="high-score" />
-       </div>
-       <div class="time-remaining" />
-   </form>
+    <div class="row">
+    <!-- high scores -->
+      <button class="btn" id="highScores" onclick="displayHighScore">View High Scores</button> 
+    </div>
 </header>
 
 <main>
     <h1 class="page-title">Coding Quiz!</h1>
-    <p>Answer as many code related questions as possible within the time limit.</p>
-    <p>Each Incorrect answer counts against your score, AND reduces your remaining time by ten seconds.</p>
-    <p>Stay focused, and don't mess this up...</p>
+    <h3>Answer as many code related questions as possible within the time limit.</h3>
+    <h3>Each Incorrect answer counts against your score, AND reduces your remaining time by ten seconds.</h3>
+    <h3>Stay focused, and don't mess this up...</h3>
    <div>
- </div>
-     <button class="btn" id="start-quiz" type="submit">Start Quiz</button>
+     <!-- Start button -->
+   <div class="container">
+    <button class="btn" id="start-quiz" type="submit">Start Quiz</button>
     <div>
   </div> 
 </main>
+</div>
 
 <footer>
 
 </footer>
 
-  <script src="./assets/js/script.js"></script> 
+<script src="./assets/script.js"></script> 
 </body>
     
 </html>
+
+
+
+
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<script src="./assets/js/script.js"></script> 
