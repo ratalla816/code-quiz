@@ -6,7 +6,7 @@ p{
     color: #030303;
     text-shadow: .5px .5px #ebf2f2;
     text-align: center;
-    font-size: xx-large;
+    font-size: large;
     font-family: sans-serif;
     }
 
@@ -33,3 +33,6 @@ h3{
     color: #262f36;
      }    
 
+input{
+    text-align: center;
+    }

@@ -3,10 +3,14 @@ var optionA = document.getElementById("a");
 var optionB = document.getElementById("b");
 var optionC = document.getElementById("c");
 var optionD = document.getElementById("d");
-var highScores = document.getElementById("highScores");
-var startQuiz = document.getElementById("startQuiz");
-var timer = document.getElementById("timer");
-
+var quizBody = document.getElementById("quiz");
+var resultsEl = document.getElementById("result");
+var finalScoreEl = document.getElementById("finalScore");
+var gameoverDiv = document.getElementById("gameover");
+var questionsEl = document.getElementById("questions");
+var gameTimer = document.getElementById("timer");
+var startButton = document.getElementById("startbtn");
+var startQuizDiv = document.getElementById("startpage");
 
 // Question array //
 var questions = [{
@@ -79,5 +83,11 @@ var questions = [{
 },
 ];
 
+function generateQuizQuestion() {
+    gameoverDiv.style.display = "none";
+    if (currentQuestionArray === finalQuestionArray) {
+        return showScore();
+    };
+
 // click to start the quiz //
-startQuizbtn.addEventListener("click", startQuiz);
+startButton.addEventListener("click", startQuiz)

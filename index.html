@@ -14,36 +14,41 @@
          |  T  |
          ---"--- --->
 <body>
-<header>
-    <div class="row">
-    <!-- high scores -->
-      <button class="btn" id="highScores" onclick="highScores">View High Scores</button> 
-    </div>
-</header>
 
-<main>
+  <div class="container">
+
+    <header>
+      <div class="row">
+      <!-- high scores -->
+        <button id="highScores" onclick="displayHighScores()">View High Scores</button> 
+      </div>
+  </header>  
+
+    <div id="startpage">
     <h1 class="page-title">Coding Quiz!</h1>
     <h3>Answer as many code related questions as possible within the time limit.</h3>
     <h3>Each Incorrect answer counts against your score, AND reduces your remaining time by ten seconds.</h3>
     <h3>Stay focused, and don't mess this up...</h3>
-   <div>
-     <!-- Start button -->
-   <div class="container">
-    <button class="btn" id="startQuiz" type="submit">Start Quiz</button>
+  <!-- Start button -->
+    <button id="startbtn">Start the Quiz!</button>
     <div>
-  </div> 
-</main>
-</div>
+     
+  <div id="quiz">
+    <div id="timer">Time remaining: </div>
+      <div id="questions"><p>Present Questions</p></div>
+          <button id="a" onclick="verifyAnswer('a')">A</button>
+          <button id="b" onclick="verifyAnswer('b')">B</button>
+          <button id="c" onclick="verifyAnswer('c')">C</button>
+          <button id="d" onclick="verifyAnswer('d')">D</button>
+          <div id="result"></div>
+    </div>
+  <div id="gameover">
 
-<footer>
 
-</footer>
-
+      </div> 
+  </main>
+ </div>
+ </div>
 <script src="script.js"></script> 
 </body>
-    
 </html>
-
-
-
-
