@@ -1,6 +1,14 @@
+// HTML elements //
+var optionA = document.getElementById("a");
+var optionB = document.getElementById("b");
+var optionC = document.getElementById("c");
+var optionD = document.getElementById("d");
+var highScores = document.getElementById("highScores");
+var startQuiz = document.getElementById("startQuiz");
+var timer = document.getElementById("timer");
 
 
-// Question array
+// Question array //
 var questions = [{
     question: "To select a class attribute, which prefix needs to be added to the class name?",
     optionA: "()",
@@ -70,3 +78,6 @@ var questions = [{
      correctAnswer: "b"
 },
 ];
+
+// click to start the quiz //
+startQuizbtn.addEventListener("click", startQuiz);
