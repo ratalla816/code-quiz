@@ -83,11 +83,35 @@ var questions = [{
 },
 ];
 
-function generateQuizQuestion() {
-    gameoverDiv.style.display = "none";
-    if (currentQuestionArray === finalQuestionArray) {
-        return showScore();
-    };
+function quizQuestions() {
+    gameComplete.display
+    if (firstQuestion === lastQuestion
+        return Score();
 
+var firstQuestion = quizQuestions[questionArray];
+questionsEl.innerHTML = "<div>" + question.questions + "</div>"
+optionA.innerHTML = question.answerA;
+optionB.innerHTML = question.answerB;
+optionC.innerHTML = question.answerC;
+optionD.innerHTML = question.answerD;
+};
+
+function startQuiz() {
+    if (firstQuestionArray === lastQuestionArray) {
+        return showScore();
+    }  
+
+timerInterval = setInterval(function () {
+    timeRemain--;
+    gameTimer.textContent = "Time remaining: " + timeRemain;
+
+            if (timeRemain === 0) {
+                clearInterval(timerInterval);
+                showScore();
+            }
+        }, 1000);
+        body.style.display = "block";   
+    }       
+    
 // click to start the quiz //
 startButton.addEventListener("click", startQuiz)
