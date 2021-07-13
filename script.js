@@ -11,6 +11,7 @@ var questionsEl = document.getElementById("questions");
 var gameTimer = document.getElementById("timer");
 var startButton = document.getElementById("startbtn");
 var startQuizDiv = document.getElementById("startpage");
+var highscoreDisplayScore = document.getElementById("highscore-score");
 
 // Question array //
 var questions = [{
@@ -88,6 +89,7 @@ function quizQuestions() {
     if (firstQuestion === lastQuestion
         return Score();
 
+                                // INDEX??? //
 var firstQuestion = quizQuestions[questionArray];
 questionsEl.innerHTML = "<div>" + question.questions + "</div>"
 optionA.innerHTML = question.answerA;
@@ -112,6 +114,17 @@ timerInterval = setInterval(function () {
         }, 1000);
         body.style.display = "block";   
     }       
-    
+   
+    function showScore() {
+        quizBody.style.display = "none"
+        clearInterval(timerInterval);
+        highscoreInputName.value = "";
+        finalScoreEl.innerHTML = "You answered " + score + " out of " + quizQuestions.length + " correctly!";
+    }
+
+
+saveScoreBtn.addEventListener("click", function highscore() {   
+   // JSON script to hold the localStorage and sequence?? 
+};  
 // click to start the quiz //
 startButton.addEventListener("click", startQuiz)
