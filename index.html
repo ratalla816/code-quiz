@@ -33,24 +33,32 @@
     <button id="startbtn">Start the Quiz!</button>
     <div>
      
-  <!-- Questions container -->
-    <div id="quiz">
+  <div id="quiz">
     <div id="timer">Time remaining: </div>
       <div id="questions"><p>Present Questions</p></div>
           <button id="a" onclick="verifyAnswer('a')">A</button>
           <button id="b" onclick="verifyAnswer('b')">B</button>
           <button id="c" onclick="verifyAnswer('c')">C</button>
           <button id="d" onclick="verifyAnswer('d')">D</button>
-          <!--correct or incorrect answer  -->
           <div id="result"></div>
     </div>
-    <!-- out of time or questions -->
-  <div id="gameover"></div>
+  <div id="gameover">
 
 
-      </div> 
-  </main>
- </div>
+  <div id="finalScore"></div>
+    <input type="text" size = "50" placeholder="Save your high score by typing your initials please." name="intials" id="initials"/>
+      <button id="saveScore">Save Score</button>
+   </div>
+  <div id=highScoresContainer>
+    <div id="high-scorePage">
+      <div id="highscore-header">
+          <h3>User Initials</h3>
+          <h3>Score</h3>
+    </div>
+      <div id = "highscore-initials"></div>
+      <div id = "highscore-score"></div>
+     </div>
+   </div>
  </div>
 <script src="script.js"></script> 
 </body>
