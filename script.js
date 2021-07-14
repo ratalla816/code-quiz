@@ -92,6 +92,7 @@ var renderTimer = 90;
 var timerInterval;
 var score = 0;
 var correct;
+var savedHighscores =[];
 
 
 // pullQuizQuestion indexes the question array.
@@ -123,7 +124,7 @@ function startQuiz() {
         gameTimer.textContent = "Time remaining: " + renderTimer;
 
            // when countdown reaches zero the timer is cleared and initiates score calculation
-        if (renderTimer === 0) {
+        if (renderTimer <= 0) {
             clearInterval(timerInterval);
             showScore();
         }
@@ -171,7 +172,6 @@ saveScoreBtn.addEventListener("click", function highscore() {
         return false;
     } else {
         // saves score and commits to local storage
-        localStorage.setItem("savedHighscores", JSON.stringify(savedHighscores));
         var currentUser = highscoreInputName.value.trim();
         var currentHighscore = {
             name: currentUser,
@@ -180,7 +180,8 @@ saveScoreBtn.addEventListener("click", function highscore() {
 
          // pulls previous high scores 
          savedHighscores.push(currentHighscore);
-         var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
+         localStorage.setItem("savedHighscores", JSON.stringify(savedHighscores));
+         savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
          renderHighscores();
  
         // high score container
@@ -190,9 +191,9 @@ saveScoreBtn.addEventListener("click", function highscore() {
         endGameBtns.style.display = "flex";
 
         // pulls high scores to display in high score container
-        savedHighscores.push(currentHighscore);
-        var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
-        renderHighscores();
+       // savedHighscores.push(currentHighscore);
+       // savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
+        //renderHighscores();
 
 
     }
@@ -263,6 +264,7 @@ function verifyAnswer(answer) {
     } else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex) {
         alert("Study harder!")
         currentQuestionIndex++;
+        renderTimer -= 10;
         pullQuizQuestion();
       // dialog box indicates that the answer is wrong.
     } else {

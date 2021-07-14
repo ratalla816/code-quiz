@@ -102,13 +102,13 @@
     }
     
     #highScore{
-        height: 1.5rem;
+        /* height: 1.5rem; */
         border: ridge 5px;
     }
     
     #high-scorePage{
         display: none;
-        width: 50%;
+        /* width: 50%; */
         border: solid;
         border-color: #dadde3;
         border-bottom-style: ridge;
@@ -135,7 +135,7 @@
     }
     
     #initials{
-        margin: 1rem;
+        margin: 3rem;
         height: 2rem;
     }
     
