@@ -131,25 +131,7 @@ function startQuiz() {
     }, 1000);
     quizBody.style.display = "block";
 
-//    (function() {
-//      var sec = 60;
-//      function startTimer(){
-//          console.log('timer suppose to go')
-//          var timer = setInterval(function(){
-//              sec--;
-//              document.getElementById('timerDisplay').innerHTML='00:'+sec;
-//              if (sec < 0) {
-//                  clearInterval(timer);
-//                  alert("Time is up!")
-//              }
-//          }, 1000);
-//      }
-//      document.getElementById('incorrect').addEventListener('click', function() {
-//          sec -= 5;
-//          document.getElementById('timerDisplay').innerHTML='00:'+sec;
-//      });
-//      startTimer();
-//  })();
+    
 }
 // gameover page displays score after all questions have been answered or if timer runs out
 function showScore() {
@@ -192,7 +174,7 @@ saveScoreBtn.addEventListener("click", function highscore() {
 
         // pulls high scores to display in high score container
        // savedHighscores.push(currentHighscore);
-       // savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
+       savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
         //renderHighscores();
 
 
