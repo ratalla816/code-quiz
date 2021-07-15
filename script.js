@@ -173,14 +173,9 @@ saveScoreBtn.addEventListener("click", function highscore() {
         endGameBtns.style.display = "flex";
 
         // pulls high scores to display in high score container
-       // savedHighscores.push(currentHighscore);
        savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
-        //renderHighscores();
-
-
+        
     }
-
-
 });
 
 

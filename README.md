@@ -24,7 +24,7 @@ https://ratalla816.github.io/code-quiz/
 
 ## Deployed Application Screenshot
 
-![application screenshot](./assets/screenshot.JPG)
+![application screenshot](./assets/images/screenshot.JPG)
 
 #### Acknoledgements
 
