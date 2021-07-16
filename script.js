@@ -58,7 +58,7 @@ var quizQuestions = [{
     answerA: "('click', createTaskHandler)",
     answerB: "On click",
     answerC: "createTaskHandler = function",
-    answerD: "buttonEl.addEventListener",
+    answerD: "buttonEl",
     correctAnswer: "a"
 },
 {

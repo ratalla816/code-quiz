@@ -7,7 +7,7 @@ Create an application that presents the user with a timed multiple-choice quiz t
 * The quiz is scored. The application must store multiple players' scores and identifiying information 
 so that players can compare their results with each other. 
 
-* The user has a limited amount of time to complete the quiz. The countdown timer is initiated when   the user clicks the "Start Quiz" button.
+* The user has a limited amount of time to complete the quiz. The countdown timer is initiated when the user clicks the "Start Quiz" button.
 
 * When the "Start Quiz" button is clicked the user will be presented with the first in a series of multiple choice questions. When a question is answered the user is automatically presented with another question.
 
@@ -26,7 +26,7 @@ https://ratalla816.github.io/code-quiz/
 
 ![application screenshot](./assets/code-quiz-screenshot.JPG)
 
-#### Acknoledgements
+#### acknowledgements
 
 * Web APIs Challenge: Code Quiz - KU Coding Bootcamp, Module 4 Challenge Assignment © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand Confidential and Proprietary. All Rights Reserved.
 
